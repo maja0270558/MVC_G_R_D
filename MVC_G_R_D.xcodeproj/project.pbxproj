@@ -1,0 +1,363 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EBDA1D3B2075FE5600A6EDD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDA1D3A2075FE5600A6EDD7 /* AppDelegate.swift */; };
+		EBDA1D3D2075FE5600A6EDD7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDA1D3C2075FE5600A6EDD7 /* ViewController.swift */; };
+		EBDA1D402075FE5600A6EDD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBDA1D3E2075FE5600A6EDD7 /* Main.storyboard */; };
+		EBDA1D422075FE5600A6EDD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBDA1D412075FE5600A6EDD7 /* Assets.xcassets */; };
+		EBDA1D452075FE5600A6EDD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBDA1D432075FE5600A6EDD7 /* LaunchScreen.storyboard */; };
+		EBDA1D512075FF7100A6EDD7 /* Django.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDA1D502075FF7100A6EDD7 /* Django.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EBDA1D372075FE5500A6EDD7 /* MVC_G_R_D.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVC_G_R_D.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBDA1D3A2075FE5600A6EDD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EBDA1D3C2075FE5600A6EDD7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EBDA1D3F2075FE5600A6EDD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EBDA1D412075FE5600A6EDD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EBDA1D442075FE5600A6EDD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EBDA1D462075FE5600A6EDD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBDA1D502075FF7100A6EDD7 /* Django.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Django.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EBDA1D342075FE5500A6EDD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EBDA1D2E2075FE5500A6EDD7 = {
+			isa = PBXGroup;
+			children = (
+				EBDA1D392075FE5600A6EDD7 /* MVC_G_R_D */,
+				EBDA1D382075FE5500A6EDD7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EBDA1D382075FE5500A6EDD7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EBDA1D372075FE5500A6EDD7 /* MVC_G_R_D.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EBDA1D392075FE5600A6EDD7 /* MVC_G_R_D */ = {
+			isa = PBXGroup;
+			children = (
+				EBDA1D4F2075FE9800A6EDD7 /* Model */,
+				EBDA1D4C2075FE7500A6EDD7 /* Support */,
+				EBDA1D4D2075FE8400A6EDD7 /* Controller */,
+				EBDA1D4E2075FE8E00A6EDD7 /* View */,
+			);
+			path = MVC_G_R_D;
+			sourceTree = "<group>";
+		};
+		EBDA1D4C2075FE7500A6EDD7 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				EBDA1D3A2075FE5600A6EDD7 /* AppDelegate.swift */,
+				EBDA1D412075FE5600A6EDD7 /* Assets.xcassets */,
+				EBDA1D462075FE5600A6EDD7 /* Info.plist */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		EBDA1D4D2075FE8400A6EDD7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EBDA1D3C2075FE5600A6EDD7 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EBDA1D4E2075FE8E00A6EDD7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EBDA1D3E2075FE5600A6EDD7 /* Main.storyboard */,
+				EBDA1D432075FE5600A6EDD7 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EBDA1D4F2075FE9800A6EDD7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EBDA1D502075FF7100A6EDD7 /* Django.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EBDA1D362075FE5500A6EDD7 /* MVC_G_R_D */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBDA1D492075FE5600A6EDD7 /* Build configuration list for PBXNativeTarget "MVC_G_R_D" */;
+			buildPhases = (
+				EBDA1D332075FE5500A6EDD7 /* Sources */,
+				EBDA1D342075FE5500A6EDD7 /* Frameworks */,
+				EBDA1D352075FE5500A6EDD7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MVC_G_R_D;
+			productName = MVC_G_R_D;
+			productReference = EBDA1D372075FE5500A6EDD7 /* MVC_G_R_D.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EBDA1D2F2075FE5500A6EDD7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = DjangoCode;
+				TargetAttributes = {
+					EBDA1D362075FE5500A6EDD7 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = EBDA1D322075FE5500A6EDD7 /* Build configuration list for PBXProject "MVC_G_R_D" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EBDA1D2E2075FE5500A6EDD7;
+			productRefGroup = EBDA1D382075FE5500A6EDD7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EBDA1D362075FE5500A6EDD7 /* MVC_G_R_D */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EBDA1D352075FE5500A6EDD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBDA1D452075FE5600A6EDD7 /* LaunchScreen.storyboard in Resources */,
+				EBDA1D422075FE5600A6EDD7 /* Assets.xcassets in Resources */,
+				EBDA1D402075FE5600A6EDD7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EBDA1D332075FE5500A6EDD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBDA1D3D2075FE5600A6EDD7 /* ViewController.swift in Sources */,
+				EBDA1D3B2075FE5600A6EDD7 /* AppDelegate.swift in Sources */,
+				EBDA1D512075FF7100A6EDD7 /* Django.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EBDA1D3E2075FE5600A6EDD7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EBDA1D3F2075FE5600A6EDD7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EBDA1D432075FE5600A6EDD7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EBDA1D442075FE5600A6EDD7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EBDA1D472075FE5600A6EDD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EBDA1D482075FE5600A6EDD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EBDA1D4A2075FE5600A6EDD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2CY3RX8F76;
+				INFOPLIST_FILE = MVC_G_R_D/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DjangoCode.MVC-G-R-D";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EBDA1D4B2075FE5600A6EDD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2CY3RX8F76;
+				INFOPLIST_FILE = MVC_G_R_D/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DjangoCode.MVC-G-R-D";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EBDA1D322075FE5500A6EDD7 /* Build configuration list for PBXProject "MVC_G_R_D" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBDA1D472075FE5600A6EDD7 /* Debug */,
+				EBDA1D482075FE5600A6EDD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBDA1D492075FE5600A6EDD7 /* Build configuration list for PBXNativeTarget "MVC_G_R_D" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBDA1D4A2075FE5600A6EDD7 /* Debug */,
+				EBDA1D4B2075FE5600A6EDD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EBDA1D2F2075FE5500A6EDD7 /* Project object */;
+}
