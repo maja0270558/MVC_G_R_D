@@ -23,6 +23,10 @@ class Django : NSObject{
     }
 }
 
+
+
+
+
 class ObserverManager : NSObject {
     var person = Django(name: "Django", size: 5566)
     func saodkaos(){
