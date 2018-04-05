@@ -10,6 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var KVO: UIButton!
+    @IBOutlet weak var Notification: UIButton!
+    @IBOutlet weak var Delegate: UIButton!
+    @IBOutlet weak var TargetAction: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         print("hi")
@@ -20,6 +25,14 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBAction func KVOButton(_ sender: Any) {
+    }
+    @IBAction func NotificationButton(_ sender: Any) {
+    }
+    @IBAction func DelegateButton(_ sender: Any) {
+    }
+    @IBAction func TargetActionButton(_ sender: Any) {
+    }
+    
 }
 
