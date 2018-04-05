@@ -8,29 +8,15 @@
 
 import Foundation
 
-class Django : NSObject{
-    var name : String
-    var size : Double
+class Person : NSObject{
+   @objc dynamic var name : String
+   @objc dynamic var size : Double
     init(name: String , size : Double){
         self.name = name
         self.size = size
         super.init()
     }
-    func observerMe(observerFunc : @escaping () -> Void)  {
-        self.observe(\Django.name, options: []) { (django, chango) in
-            observerFunc()
-        }
-    }
 }
 
-class ObserverManager : NSObject {
-    var person = Django(name: "Django", size: 5566)
-    func saodkaos(){
-        person.observerMe {
-            print("Change")
-        }
-    }
-    
-}
 
 
