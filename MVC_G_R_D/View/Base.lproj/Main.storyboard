@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,13 +13,75 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MVC_G_R_D" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mhl-5O-DXp">
+                                <rect key="frame" x="37.5" y="133" width="300" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="HMg-24-8x9"/>
+                                    <constraint firstAttribute="height" constant="50" id="zRq-fj-rum"/>
+                                </constraints>
+                                <state key="normal" title="KVO"/>
+                                <connections>
+                                    <action selector="KVOButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qSD-vo-qFG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O1E-8h-mEj">
+                                <rect key="frame" x="37" y="228" width="300" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="R2E-zS-ycI"/>
+                                    <constraint firstAttribute="height" constant="50" id="v1v-EW-Jx3"/>
+                                </constraints>
+                                <state key="normal" title="Notification"/>
+                                <connections>
+                                    <action selector="NotificationButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pNU-9b-H2P"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dMX-B2-g5P">
+                                <rect key="frame" x="37.5" y="323" width="300" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="fML-yV-lBI"/>
+                                    <constraint firstAttribute="width" constant="300" id="rZm-yQ-fqr"/>
+                                </constraints>
+                                <state key="normal" title="Delegate"/>
+                                <connections>
+                                    <action selector="DelegateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VTg-hh-1G5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R6j-rf-rtG">
+                                <rect key="frame" x="37.5" y="418" width="300" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="63b-Kz-3Qa"/>
+                                    <constraint firstAttribute="width" constant="300" id="ER3-tA-kna"/>
+                                </constraints>
+                                <state key="normal" title="TargetAction"/>
+                                <connections>
+                                    <action selector="TargetActionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xtT-Df-jua"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dMX-B2-g5P" firstAttribute="top" secondItem="O1E-8h-mEj" secondAttribute="bottom" constant="45" id="6pJ-Ur-q2W"/>
+                            <constraint firstItem="O1E-8h-mEj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7FO-Ze-fIq"/>
+                            <constraint firstItem="R6j-rf-rtG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9Vi-C1-QyF"/>
+                            <constraint firstItem="mhl-5O-DXp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EMJ-RQ-RDN"/>
+                            <constraint firstItem="O1E-8h-mEj" firstAttribute="top" secondItem="mhl-5O-DXp" secondAttribute="bottom" constant="45" id="Rfk-Nc-S9C"/>
+                            <constraint firstItem="mhl-5O-DXp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="113" id="hfL-kN-i3w"/>
+                            <constraint firstItem="R6j-rf-rtG" firstAttribute="top" secondItem="dMX-B2-g5P" secondAttribute="bottom" constant="45" id="uMd-qs-CKE"/>
+                            <constraint firstItem="dMX-B2-g5P" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zxT-nC-BZK"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="Delegate" destination="dMX-B2-g5P" id="MAc-vj-s67"/>
+                        <outlet property="KVO" destination="mhl-5O-DXp" id="aGF-oz-pLl"/>
+                        <outlet property="Notification" destination="O1E-8h-mEj" id="NLP-MK-v9R"/>
+                        <outlet property="TargetAction" destination="R6j-rf-rtG" id="Ye2-EW-Wff"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

@@ -18,5 +18,3 @@ class Person : NSObject{
     }
 }
 
-
-
