@@ -23,12 +23,8 @@ class ViewController: UIViewController {
     }
     func addObservers(){
         observers = [
-            djangoPersons.observe(\Person.name, options: [.new,.old,.prior], changeHandler: { (person, change) in
+            djangoPersons.observe(\Person.name, options: [.prior], changeHandler: { (person, change) in
                 print("----------")
-                //is prior 判斷值是變化前還變化後
-                //new 新的值
-                //old 沒變化的值
-                //initial 初始值
                 print(person.name)
                 print(change.isPrior)
                 print(change.newValue)
@@ -44,7 +40,7 @@ class ViewController: UIViewController {
     
     @IBAction func KVOButton(_ sender: Any) {
         djangoPersons.name = "Change"
-        observers.map{$0.invalidate()}
+//        observers.map{$0.invalidate()}
     }
     @IBAction func NotificationButton(_ sender: Any) {
     }
