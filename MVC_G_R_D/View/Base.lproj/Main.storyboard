@@ -128,10 +128,6 @@
                         <viewLayoutGuide key="safeArea" id="k6T-mU-VCx"/>
                     </view>
                     <navigationItem key="navigationItem" id="iFI-iE-tvG"/>
-                    <connections>
-                        <outlet property="MarioButton" destination="er4-Y1-zZl" id="Bct-ZW-f7m"/>
-                        <outlet property="StreetButton" destination="A5B-xY-XEg" id="lyV-Bg-Zl6"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MRQ-gH-9dZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
