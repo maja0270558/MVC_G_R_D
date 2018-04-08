@@ -55,12 +55,9 @@ class ViewController: UIViewController {
     func addObservers(){
         observers = [
             djangoPersons.observe(\Person.name, options: [.prior], changeHandler: { (person, change) in
-                print("----------")
-                print(person.name)
-                print(change.isPrior)
-                print(change.newValue)
-                print(change.oldValue)
-                print("----------")
+                if change.isPrior {
+                    self.allert(title: "KVO" ,message:  "--------\n name: \(person.name)\n isprior: \(change.isPrior)\n new: \(change.newValue)\n old: \(change.oldValue)\n---------")
+                }
             })
         ]
     }
@@ -90,11 +87,7 @@ class ViewController: UIViewController {
 extension ViewController: GameDelegate {
     
     func Game(name: String) {
-        let resultAlert = UIAlertController(title: "Grace wants to play \n \(name)", message: nil, preferredStyle: .alert)
-        let okAlert = UIAlertAction(title: "OK", style: .default, handler: nil)
-        
-        resultAlert.addAction(okAlert)
-        self.present(resultAlert, animated: true, completion: nil)
+        self.allert(title: "Grace wants to play \n \(name)")
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -102,6 +95,12 @@ extension ViewController: GameDelegate {
             destination.delegate = self
         }
     }
-    
 }
-
+extension ViewController {
+    func allert(title:String = "" , message : String? = nil){
+        let resultAlert = UIAlertController(title: title , message: message, preferredStyle: .alert)
+        let okAlert = UIAlertAction(title: "ok", style: .default, handler: nil)
+        resultAlert.addAction(okAlert)
+        self.present(resultAlert, animated: true, completion: nil)
+    }
+}
