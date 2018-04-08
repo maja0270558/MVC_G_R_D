@@ -7,8 +7,29 @@
 //
 
 import UIKit
+import UserNotifications
 
 class ViewController: UIViewController {
+    
+    @IBAction func notificationAction(_ sender: Any)
+    {
+        // Notification 2. Content
+        let content = UNMutableNotificationContent()
+        content.title = "This is titleeeeee"
+        content.subtitle = "This is subTitleeeeee"
+        content.body = "This is bodyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy"
+        content.badge = 1
+        
+        // Notification 3. Trigger
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+        
+        // Notification 4. Schedule
+        let request = UNNotificationRequest(identifier: "timerDone", content: content, trigger: trigger)
+        UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
+        
+        
+    }
+    
     
     @IBOutlet weak var KVO: UIButton!
     @IBOutlet weak var Notification: UIButton!
@@ -19,6 +40,15 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Notification 1. Register
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge])
+        { (didAllow, error) in
+            
+        }
+        
+        
+        
         addObservers()
     }
     func addObservers(){
