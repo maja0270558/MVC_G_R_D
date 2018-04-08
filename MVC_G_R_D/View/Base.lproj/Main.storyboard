@@ -24,6 +24,7 @@
                                     <constraint firstAttribute="width" constant="300" id="HMg-24-8x9"/>
                                     <constraint firstAttribute="height" constant="50" id="zRq-fj-rum"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="KVO"/>
                                 <connections>
                                     <action selector="KVOButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qSD-vo-qFG"/>
@@ -35,6 +36,7 @@
                                     <constraint firstAttribute="width" constant="300" id="R2E-zS-ycI"/>
                                     <constraint firstAttribute="height" constant="50" id="v1v-EW-Jx3"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Notification"/>
                                 <connections>
                                     <action selector="NotificationButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pNU-9b-H2P"/>
@@ -46,6 +48,7 @@
                                     <constraint firstAttribute="height" constant="50" id="fML-yV-lBI"/>
                                     <constraint firstAttribute="width" constant="300" id="rZm-yQ-fqr"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Delegate"/>
                                 <connections>
                                     <action selector="DelegateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VTg-hh-1G5"/>
@@ -57,6 +60,7 @@
                                     <constraint firstAttribute="height" constant="50" id="63b-Kz-3Qa"/>
                                     <constraint firstAttribute="width" constant="300" id="ER3-tA-kna"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="TargetAction"/>
                                 <connections>
                                     <action selector="TargetActionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xtT-Df-jua"/>
