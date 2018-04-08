@@ -21,6 +21,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         addObservers()
     }
+    
     func addObservers(){
         observers = [
             djangoPersons.observe(\Person.name, options: [.prior], changeHandler: { (person, change) in
@@ -33,6 +34,7 @@ class ViewController: UIViewController {
             })
         ]
     }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -45,8 +47,30 @@ class ViewController: UIViewController {
     @IBAction func NotificationButton(_ sender: Any) {
     }
     @IBAction func DelegateButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "delegate", sender: self)
     }
     @IBAction func TargetActionButton(_ sender: Any) {
+    }
+    
+    
+    
+}
+
+
+extension ViewController: GameDelegate {
+    
+    func Game(name: String) {
+        let resultAlert = UIAlertController(title: "Grace wants to play \n \(name)", message: nil, preferredStyle: .alert)
+        let okAlert = UIAlertAction(title: "OK", style: .default, handler: nil)
+        
+        resultAlert.addAction(okAlert)
+        self.present(resultAlert, animated: true, completion: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? DelegateViewController{
+            destination.delegate = self
+        }
     }
     
 }

@@ -81,10 +81,61 @@
                         <outlet property="KVO" destination="mhl-5O-DXp" id="aGF-oz-pLl"/>
                         <outlet property="Notification" destination="O1E-8h-mEj" id="NLP-MK-v9R"/>
                         <outlet property="TargetAction" destination="R6j-rf-rtG" id="Ye2-EW-Wff"/>
+                        <segue destination="RNk-sQ-eIB" kind="show" identifier="delegate" id="TPS-3h-gsN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--Delegate View Controller-->
+        <scene sceneID="o0f-cg-AfK">
+            <objects>
+                <viewController id="RNk-sQ-eIB" customClass="DelegateViewController" customModule="MVC_G_R_D" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="B7F-my-Ipr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="er4-Y1-zZl">
+                                <rect key="frame" x="37" y="355" width="300" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="RDH-GN-oXs"/>
+                                    <constraint firstAttribute="height" constant="50" id="VlB-ud-j9g"/>
+                                </constraints>
+                                <state key="normal" title="Mario Kart"/>
+                                <connections>
+                                    <action selector="MarioKartButton:" destination="RNk-sQ-eIB" eventType="touchUpInside" id="RSs-ei-QIo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A5B-xY-XEg">
+                                <rect key="frame" x="37" y="250" width="300" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="ZJl-5R-5Pe"/>
+                                    <constraint firstAttribute="height" constant="50" id="yrj-Eo-LGs"/>
+                                </constraints>
+                                <state key="normal" title="Street Fighter"/>
+                                <connections>
+                                    <action selector="StreetFighterButton:" destination="RNk-sQ-eIB" eventType="touchUpInside" id="B6F-uX-NrR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="A5B-xY-XEg" firstAttribute="centerX" secondItem="B7F-my-Ipr" secondAttribute="centerX" id="5km-aP-G7e"/>
+                            <constraint firstItem="A5B-xY-XEg" firstAttribute="top" secondItem="k6T-mU-VCx" secondAttribute="top" constant="230" id="HXS-Ly-Yhd"/>
+                            <constraint firstItem="er4-Y1-zZl" firstAttribute="top" secondItem="A5B-xY-XEg" secondAttribute="bottom" constant="55" id="hCy-tu-Yew"/>
+                            <constraint firstItem="er4-Y1-zZl" firstAttribute="centerX" secondItem="B7F-my-Ipr" secondAttribute="centerX" id="hZd-sE-k44"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="k6T-mU-VCx"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="iFI-iE-tvG"/>
+                    <connections>
+                        <outlet property="MarioButton" destination="er4-Y1-zZl" id="Bct-ZW-f7m"/>
+                        <outlet property="StreetButton" destination="A5B-xY-XEg" id="lyV-Bg-Zl6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MRQ-gH-9dZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1415" y="33"/>
         </scene>
     </scenes>
 </document>

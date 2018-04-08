@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0918F019207A13610063B87D /* DelegateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0918F018207A13610063B87D /* DelegateViewController.swift */; };
 		EBDA1D3B2075FE5600A6EDD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDA1D3A2075FE5600A6EDD7 /* AppDelegate.swift */; };
 		EBDA1D3D2075FE5600A6EDD7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDA1D3C2075FE5600A6EDD7 /* ViewController.swift */; };
 		EBDA1D402075FE5600A6EDD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBDA1D3E2075FE5600A6EDD7 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0918F018207A13610063B87D /* DelegateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateViewController.swift; sourceTree = "<group>"; };
 		EBDA1D372075FE5500A6EDD7 /* MVC_G_R_D.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVC_G_R_D.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBDA1D3A2075FE5600A6EDD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBDA1D3C2075FE5600A6EDD7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				EBDA1D3C2075FE5600A6EDD7 /* ViewController.swift */,
+				0918F018207A13610063B87D /* DelegateViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBDA1D3D2075FE5600A6EDD7 /* ViewController.swift in Sources */,
+				0918F019207A13610063B87D /* DelegateViewController.swift in Sources */,
 				EBDA1D3B2075FE5600A6EDD7 /* AppDelegate.swift in Sources */,
 				EBDA1D512075FF7100A6EDD7 /* Django.swift in Sources */,
 			);
