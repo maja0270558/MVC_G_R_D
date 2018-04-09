@@ -11,6 +11,11 @@ import UserNotifications
 
 class ViewController: UIViewController {
     
+    
+    @IBOutlet weak var targetActionOutlet: UIButton!
+    
+    
+    
     @IBAction func notificationAction(_ sender: Any)
     {
         // Notification 2. Content
@@ -50,6 +55,9 @@ class ViewController: UIViewController {
         
         
         addObservers()
+        
+        
+        targetActionOutlet.addTarget(self, action: #selector(handleRegister), for: .touchUpInside)
     }
     
     func addObservers(){
@@ -76,8 +84,53 @@ class ViewController: UIViewController {
     @IBAction func DelegateButton(_ sender: Any) {
         self.performSegue(withIdentifier: "delegate", sender: self)
     }
-    @IBAction func TargetActionButton(_ sender: Any) {
+    
+    @objc func handleRegister()
+    {
+        let alertController = UIAlertController(
+            title: "提示",
+            message: "一個簡單提示，請按確認繼續",
+            preferredStyle: .alert)
+        
+        // 建立[確認]按鈕
+        let okAction = UIAlertAction(
+            title: "確認",
+            style: .default,
+            handler: {
+                (action: UIAlertAction!) -> Void in
+                print("按下確認後，閉包裡的動作")
+        })
+        alertController.addAction(okAction)
+        
+        // 顯示提示框
+        self.present(
+            alertController,
+            animated: true,
+            completion: nil)
     }
+    
+//    @IBAction func TargetActionButton(_ sender: Any) {
+//        let alertController = UIAlertController(
+//            title: "提示",
+//            message: "一個簡單提示，請按確認繼續",
+//            preferredStyle: .alert)
+//        
+//        // 建立[確認]按鈕
+//        let okAction = UIAlertAction(
+//            title: "確認",
+//            style: .default,
+//            handler: {
+//                (action: UIAlertAction!) -> Void in
+//                print("按下確認後，閉包裡的動作")
+//        })
+//        alertController.addAction(okAction)
+//        
+//        // 顯示提示框
+//        self.present(
+//            alertController,
+//            animated: true,
+//            completion: nil)
+//    }
     
     
     

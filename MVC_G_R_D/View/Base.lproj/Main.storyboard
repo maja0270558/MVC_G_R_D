@@ -63,9 +63,6 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="TargetAction"/>
-                                <connections>
-                                    <action selector="TargetActionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xtT-Df-jua"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -85,7 +82,7 @@
                         <outlet property="Delegate" destination="dMX-B2-g5P" id="MAc-vj-s67"/>
                         <outlet property="KVO" destination="mhl-5O-DXp" id="aGF-oz-pLl"/>
                         <outlet property="Notification" destination="O1E-8h-mEj" id="NLP-MK-v9R"/>
-                        <outlet property="TargetAction" destination="R6j-rf-rtG" id="Ye2-EW-Wff"/>
+                        <outlet property="targetActionOutlet" destination="R6j-rf-rtG" id="dMC-Zc-OKS"/>
                         <segue destination="RNk-sQ-eIB" kind="show" identifier="delegate" id="TPS-3h-gsN"/>
                     </connections>
                 </viewController>
